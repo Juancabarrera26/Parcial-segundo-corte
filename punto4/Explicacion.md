@@ -83,7 +83,7 @@ predictivo.py
 Se implemento un parser de tipo predictivo utilizando el enfoque descendente recursivo.
 
 Este parser funciona mediante un conjunto de funciones, donde cada funcion representa una regla de la gramatica.
-El analisis se realiza de izquierda a derecha, consumiendo los tokens de la entrada mediante una funcion `match`.
+El analisis se realiza de izquierda a derecha, consumiendo los tokens de la entrada mediante una funcion match.
 
 A diferencia del algoritmo CYK, este parser no construye una tabla, sino que sigue directamente la estructura de la gramatica.
 

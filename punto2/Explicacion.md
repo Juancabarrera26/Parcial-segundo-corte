@@ -35,7 +35,7 @@ Cada una mantiene la estructura definida en el punto 1.
 ## Gramatica implementada
 
 ```antlr id="7gqzt0"
-grammar CRUDSimple;
+grammar CRUD;
 
 programa: instruccion+ ;
 

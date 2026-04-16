@@ -111,7 +111,7 @@ La cadena es reconocida correctamente sin errores de sintaxis.
 
 ## Ejecucion y pruebas
 
-Para ejecutar el parser, se debe utilizar el archivo `parser_p5.py`.
+Para ejecutar el parser, se debe utilizar el archivo parser_p5.py.
 
 ---
 

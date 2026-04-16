@@ -58,6 +58,7 @@ Para eliminar la ambiguedad, se separan claramente las proposiciones en dos tipo
 * No emparejadas
 
 La nueva gramatica es:
+```
 
 prop -> emparejada
 | no_emparejada
@@ -67,6 +68,7 @@ emparejada -> if expr then emparejada else emparejada
 
 no_emparejada -> if expr then prop
 | if expr then emparejada else no_emparejada
+```
 
 ---
 

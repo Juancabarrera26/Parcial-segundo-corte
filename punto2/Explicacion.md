@@ -19,7 +19,7 @@ Esto permitio generar y probar el parser directamente desde el entorno.
 
 ## Implementacion
 
-Se definio un archivo de gramatica llamado `CRUD.g4`, el cual contiene las reglas del lenguaje CRUD propuesto.
+Se definio un archivo de gramatica llamado CRUD.g4, el cual contiene las reglas del lenguaje CRUD propuesto.
 
 Las instrucciones soportadas son:
 
@@ -131,8 +131,8 @@ Para ejecutar la gramatica en IntelliJ se siguieron los siguientes pasos:
 
 1. Crear un proyecto en IntelliJ
 2. Instalar el plugin de ANTLR v4
-3. Agregar el archivo `CRUD.g4`
-4. Click derecho sobre la regla `programa`
+3. Agregar el archivo CRUD.g4
+4. Click derecho sobre la regla programa
 5. Seleccionar la opcion de prueba (Test Rule)
 6. Ingresar una cadena de entrada
 

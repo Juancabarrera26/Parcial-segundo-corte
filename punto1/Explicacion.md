@@ -1,7 +1,5 @@
 # Punto 1 - Gramatica para operaciones CRUD
 
-## Descripcion
-
 En este punto se diseño una gramatica para un lenguaje sencillo que permite realizar operaciones CRUD sobre una base de datos no relacional.
 
 ---

@@ -78,13 +78,50 @@ Resultados:
 
 ## Parser predictivo
 
-Se implemento un parser descendente simple para la misma gramatica, utilizando funciones recursivas.
+predictivo.py
 
-Este parser analiza la cadena de izquierda a derecha sin necesidad de construir una tabla.
+Se implemento un parser de tipo predictivo utilizando el enfoque descendente recursivo.
+
+Este parser funciona mediante un conjunto de funciones, donde cada funcion representa una regla de la gramatica.
+El analisis se realiza de izquierda a derecha, consumiendo los tokens de la entrada mediante una funcion `match`.
+
+A diferencia del algoritmo CYK, este parser no construye una tabla, sino que sigue directamente la estructura de la gramatica.
 
 ---
 
-## Comparacion de rendimiento
+## Funcionamiento
+
+El parser esta compuesto por funciones como:
+
+* E() para expresiones
+* T() para terminos
+* F() para factores
+
+Cada funcion llama a otras segun la estructura de la gramatica.
+
+Por ejemplo:
+
+* E procesa sumas
+* T procesa multiplicaciones
+* F procesa numeros o expresiones entre parentesis
+
+---
+
+## Ejemplo
+
+Entrada:
+
+2+3
+
+Proceso:
+
+* Se reconoce primero un numero (F)
+* Luego una suma
+* Luego otro numero
+
+Resultado:
+
+La cadena es valida segun la gramatica.
 
 Se evaluaron ambos parsers teniendo en cuenta el tiempo y la complejidad.
 

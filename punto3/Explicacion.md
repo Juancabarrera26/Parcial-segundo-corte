@@ -1,4 +1,4 @@
-# Punto 3 - Ambiguedad en if-then-else
+# Punto 3 
 
 
 En este punto se analiza una gramatica propuesta para resolver la ambiguedad del uso del else en estructuras condicionales.

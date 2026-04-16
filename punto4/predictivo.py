@@ -6,7 +6,7 @@ def match(t):
     if pos < len(tokens) and tokens[pos] == t:
         pos += 1
     else:
-        raise Exception("Error")
+        raise Exception("Error de sintaxis")
 
 def E():
     T()
@@ -21,13 +21,20 @@ def T():
         T()
 
 def F():
-    if tokens[pos].isdigit():
+    global pos
+    if pos < len(tokens) and tokens[pos].isdigit():
         match(tokens[pos])
-    elif tokens[pos] == '(':
+    elif pos < len(tokens) and tokens[pos] == '(':
         match('(')
         E()
         match(')')
-      
+    else:
+        raise Exception("Error en F")
+
 tokens = list("2+3")
 E()
-print("Cadena valida")
+
+if pos == len(tokens):
+    print("Cadena valida")
+else:
+    print("Error")

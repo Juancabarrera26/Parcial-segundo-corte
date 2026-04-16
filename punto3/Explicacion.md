@@ -21,23 +21,25 @@ La idea es determinar si la gramatica es ambigua y, en caso de serlo, realizar l
 ## Demostracion de ambiguedad
 
 Se analiza la siguiente expresion:
+```
 
 if a then if b then x else y
-
+```
 Esta expresion puede interpretarse de dos formas diferentes:
 
 ### Interpretacion 1
 
 El else se asocia al segundo if:
 
+```
 if a then (if b then x else y)
-
+```
 ### Interpretacion 2
 
 El else se asocia al primer if:
-
+```
 (if a then if b then x) else y
-
+```
 Esto implica que existen dos arboles de derivacion distintos para la misma cadena, por lo tanto la gramatica sigue siendo ambigua.
 
 ---

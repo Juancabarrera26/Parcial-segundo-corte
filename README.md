@@ -4,7 +4,7 @@
 
 1. Diseño de una gramatica para operaciones CRUD en una base de datos No relacional
 2. Implementacion de la gramatica usando ANTLR
-3. Analisis de indefiniciones en estructuras if-then-else
+3. Analisis de ambiguedad en estructuras if-then-else
 4. Implementacion del algoritmo CYK para una calculadora y comparacion con parser predictivo
 5. Implementacion de un parser descendente recursivo
 
@@ -16,7 +16,7 @@ El objetivo del trabajo es aplicar conceptos de:
 
 * Diseño de gramaticas
 * Analisis sintactico
-* Indefinicion en lenguajes
+* Ambiguedad en lenguajes
 * Algoritmos de parsing
 * Implementacion de parsers
 

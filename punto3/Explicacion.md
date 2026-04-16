@@ -50,6 +50,59 @@ Aunque la gramatica intenta separar los casos usando la regla prop_emparejada, a
 
 Por esta razon, no elimina completamente la ambiguedad del problema conocido como dangling else.
 
+--- 
+
+## Operaciones realizadas
+
+Para eliminar la ambiguedad, se realizaron las siguientes operaciones sobre la gramatica:
+
+### 1. Identificacion del problema
+
+Se detecta que la ambiguedad ocurre en producciones donde aparece:
+```
+
+if expr then prop
+```
+ya que no se especifica claramente a que if pertenece el else.
+
+---
+
+### 2. Separacion de casos
+
+Se divide la gramatica en dos tipos de producciones:
+
+* Proposiciones emparejadas (con else)
+* Proposiciones no emparejadas (sin else)
+
+Esto permite controlar como se asigna el else.
+
+---
+
+### 3. Redefinicion de las reglas
+
+Se reemplazan las reglas originales por nuevas producciones:
+
+```
+prop -> emparejada
+| no_emparejada
+
+emparejada -> if expr then emparejada else emparejada
+| otras
+
+no_emparejada -> if expr then prop
+| if expr then emparejada else no_emparejada
+```
+---
+
+### 4. Restriccion de derivaciones
+
+Con esta nueva estructura:
+
+* Las expresiones emparejadas siempre incluyen else
+* Las no emparejadas no permiten cerrar completamente la estructura
+
+Esto evita que una misma cadena tenga mas de una interpretacion.
+
 ---
 
 ## Correccion de la gramatica

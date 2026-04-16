@@ -1,0 +1,7 @@
+INSERTAR usuarios ( nombre = "Juan Camilo"; edad = 20 )
+
+CONSULTAR usuarios DONDE edad > 18
+
+MODIFICAR usuarios DONDE nombre = "Juan Camilo" ( edad = 21 )
+
+BORRAR usuarios DONDE edad < 18

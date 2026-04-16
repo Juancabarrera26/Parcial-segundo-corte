@@ -134,6 +134,63 @@ Se evaluaron ambos parsers teniendo en cuenta el tiempo y la complejidad.
 
 ---
 
+## Ejecucion de los parsers
+
+Para probar los parsers implementados, se utilizaron archivos en Python.
+
+---
+
+### Ejecucion del parser CYK
+
+1. Abrir el archivo `cyk.py`
+2. Modificar la cadena de entrada en la parte final del codigo:
+
+```python
+print(cyk("23"))
+```
+
+3. Ejecutar el archivo:
+
+```bash
+python cyk.py
+```
+
+Resultado:
+
+* Retorna `True` si la cadena pertenece al lenguaje
+* Retorna `False` en caso contrario
+
+---
+
+### Ejecucion del parser predictivo
+
+1. Abrir el archivo `predictivo.py`
+2. Modificar la entrada en la variable `tokens`:
+
+```python
+tokens = list("2+3")
+```
+
+3. Ejecutar el archivo:
+
+```bash
+python predictivo.py
+```
+
+Resultado:
+
+* Si la cadena es valida, imprime:
+  Cadena valida
+* Si hay un error, lanza una excepcion de sintaxis
+
+---
+
+## Punto de vista
+
+* Ambos parsers funcionan con expresiones simples
+* Se recomienda usar entradas cortas para facilitar la prueba
+* El parser predictivo es mas rapido en ejecucion
+
 ## Analisis
 
 El algoritmo CYK es mas general y puede trabajar con una mayor variedad de gramaticas, pero su costo computacional es alto.

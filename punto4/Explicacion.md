@@ -164,8 +164,8 @@ Resultado:
 
 ### Ejecucion del parser predictivo
 
-1. Abrir el archivo `predictivo.py`
-2. Modificar la entrada en la variable `tokens`:
+1. Abrir el archivo de predictivo.py
+2. Modificar la entrada en la variable tokens:
 
 ```python
 tokens = list("2+3")

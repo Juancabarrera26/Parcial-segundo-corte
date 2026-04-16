@@ -1,6 +1,6 @@
 # Parcial 2
 
-## El parcial esta dividido en 5 puntos:
+## El parcial esta dividido en los siguientes puntos:
 
 1. Diseño de una gramatica para operaciones CRUD en una base de datos No relacional
 2. Implementacion de la gramatica usando ANTLR

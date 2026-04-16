@@ -80,49 +80,50 @@ Las pruebas se ejecutaron utilizando la herramienta de ANTLR integrada en Intell
 ### Prueba 1
 
 Entrada:
+```
 
 INSERTAR usuarios ( nombre = "Juan Camilo"; edad = 20 )
-
+```
 Resultado:
-
+```
 La instruccion es reconocida correctamente y se genera el arbol sintactico sin errores.
-
+```
 ---
 
 ### Prueba 2
 
 Entrada:
-
+```
 CONSULTAR usuarios DONDE edad > 18
-
+```
 Resultado:
-
+```
 La condicion es procesada correctamente.
-
+```
 ---
 
 ### Prueba 3
 
 Entrada:
-
+```
 MODIFICAR usuarios DONDE nombre = "Juan Camilo" ( edad = 21 )
-
+```
 Resultado:
-
+``` 
 Se reconoce la estructura completa de la instruccion.
-
+```
 ---
 
 ### Prueba 4
 
 Entrada:
-
+```
 BORRAR usuarios DONDE edad < 18
-
+```
 Resultado:
-
+```
 La instruccion es valida y no presenta errores sintacticos.
-
+```
 ---
 
 ## Ejecucion en IntelliJ

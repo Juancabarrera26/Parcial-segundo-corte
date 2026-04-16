@@ -1,4 +1,4 @@
-grammar CRUDSimple;
+grammar CRUD;
 
 programa: instruccion+ ;
 

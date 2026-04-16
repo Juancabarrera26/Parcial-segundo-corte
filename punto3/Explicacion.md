@@ -4,13 +4,14 @@
 En este punto se analiza una gramatica propuesta para resolver la ambiguedad del uso del else en estructuras condicionales.
 
 La gramatica dada es:
+```
 
 prop -> if expr then prop
 | prop_emparejada
 
 prop_emparejada -> if expr then prop_emparejada else prop
 | otras
-
+```
 ---
 
 La idea es determinar si la gramatica es ambigua y, en caso de serlo, realizar las modificaciones necesarias para eliminar la ambiguedad.

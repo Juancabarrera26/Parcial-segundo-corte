@@ -2,7 +2,7 @@ def cyk(cadena):
     n = len(cadena)
     tabla = [[set() for _ in range(n)] for _ in range(n)]
 
-    # Reglas simples en CNF aproximada
+    # Reglas simples en CNF 
     reglas = {
         'NUM': ['2', '3', '4', '5'],
         'E': [('E', 'PLUS'), ('T',)],

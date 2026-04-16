@@ -99,14 +99,7 @@ def expr():
 
 ---
 
-## Pruebas realizadas
-
-Ejemplo de entrada:
-```
-
-if x then y = 5 else y = 10
-```
-Tokens utilizados:
+## Tokens utilizados:
 
 ["if", "ID", "then", "ID", "=", "NUM", "else", "ID", "=", "NUM"]
 

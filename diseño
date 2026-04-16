@@ -1,0 +1,29 @@
+programa -> instruccion lista
+
+lista -> instruccion lista
+      | ε
+
+instruccion -> insertar
+            | consultar
+            | modificar
+            | borrar
+
+insertar -> INSERTAR ID ( campos )
+
+consultar -> CONSULTAR ID condicion
+
+modificar -> MODIFICAR ID condicion ( campos )
+
+borrar -> BORRAR ID condicion
+
+campos -> campo ; campos
+        | campo
+
+campo -> ID = valor
+
+condicion -> DONDE ID op valor
+
+op -> = | != | < | >
+
+valor -> NUM
+       | STRING
